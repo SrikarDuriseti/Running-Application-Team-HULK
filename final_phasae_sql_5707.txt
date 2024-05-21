@@ -1,0 +1,108 @@
+show databases
+create database hulkdb
+show databases
+use hulkdb
+create table hulkdb.personal_details( User_ID INT(5), UserName VARCHAR(20), Gender VARCHAR(20), Age INT(04), Weight INT(04), Height INT(04), Mobile_Number INT(10))
+create table hulkdb.health_record(Health_ID INT(5), Heart_Rate INT(3), Temperature INT(4), Sleep VARCHAR(20), SpO2 INT(4), User_ID INT(5))
+create table hulkdb.running_record(Running_ID INT(5),Calories_Burnt INT(9),Distance INT(9), Average_Speed INT(9),Laps_Count INT(9),User_ID INT(5))
+create table hulkdb.activity_log(Activity_ID INT(5), Time_Start TIME, Time_End TIME, Activity_Type VARCHAR(10),Running_ID INT(5))
+create table hulkdb.trainer_record(Trainer_ID INT(5),Trainer_Name VARCHAR(20),Trainer_PhoneNumber INT(10))
+create table hulkdb.training_plan(Schedule_ID INT(5), Schedule_Session VARCHAR(20), Diet VARCHAR(20), Trainer_ID INT(5))
+create table hulkdb.transaction_record(Transaction_ID INT(5), User_ID VARCHAR(20), Amount INT(9), Transaction_Date Date, Schedule_ID INT(5), Activity_ID INT(5))
+
+show tables
+
+insert into hulkdb.personal_details 
+
+
+
+
+show databases
+create database hulkdb
+show databases
+use hulkdb
+create table hulkdb.personal_details( User_ID INT(5), UserName VARCHAR(20), Gender VARCHAR(20), Age INT(04), Weight INT(04), Height INT(04), Mobile_Number INT(10))
+create table hulkdb.health_record(Health_ID INT(5), Heart_Rate INT(3), Temperature INT(4), Sleep VARCHAR(20), SpO2 INT(4), User_ID INT(5))
+create table hulkdb.running_record(Running_ID INT(5),Calories_Burnt INT(9),Distance INT(9), Average_Speed INT(9),Laps_Count INT(9),User_ID INT(5))
+create table hulkdb.activity_log(Activity_ID INT(5), Time_Start TIME, Time_End TIME, Activity_Type VARCHAR(10),Running_ID INT(5))
+create table hulkdb.trainer_record(Trainer_ID INT(5),Trainer_Name VARCHAR(20),Trainer_PhoneNumber INT(10))
+create table hulkdb.training_plan(Schedule_ID INT(5), Schedule_Session VARCHAR(20), Diet VARCHAR(20), Trainer_ID INT(5))
+create table hulkdb.transaction_record(Transaction_ID INT(5), User_ID VARCHAR(20), Amount INT(9), Transaction_Date Date, Schedule_ID INT(5), Activity_ID INT(5))
+
+show tables
+drop table new_table
+
+drop database hulk_database
+show databases
+use hulkdb
+show tables
+
+-- personal details
+insert into hulkdb.personal_details values(108,'Balayya','Male',16,108,174,879654320)
+insert into hulkdb.personal_details values(109,'Venky','Male',36,89,178,423188621)
+insert into hulkdb.personal_details values(110,'Nag','Male',46,85,177,954673811)
+insert into hulkdb.personal_details values(111,'Pawan','Male',36,80,179,679832874)
+insert into hulkdb.personal_details values(112,'Mahesh','Male',26,76,181,679546323)
+insert into hulkdb.personal_details values(113,'Raviteja','Male',22,67,180,940843664)
+insert into hulkdb.personal_details values(114,'Prabhas','Male',28,90,183,940657934)
+insert into hulkdb.personal_details values(115,'AlluArjun','Male',28,88,173,718787557)
+insert into hulkdb.personal_details values(116,'TarakaRamaRaoJr','Male',25,105,169,753882554)
+insert into hulkdb.personal_details values(117,'ChristianBale','Male',45,70,172,738615150)
+insert into hulkdb.personal_details values(118,'Kajal','Female',34,68,174,944077141)
+insert into hulkdb.personal_details values(119,'Anushka','Female',38,70,178,944018167)
+insert into hulkdb.personal_details values(120,'Nayan','Female',36,73,172,954241334)
+insert into hulkdb.personal_details values(121,'Regina','Female',27,68,171,891925888)
+insert into hulkdb.personal_details values(122,'Priya','Female',30,70,168,814436748)
+insert into hulkdb.personal_details values(123,'Sunny','Female',27,78,167,814391238)
+insert into hulkdb.personal_details values(124,'Shreya','Female',29,68,165,949099872)
+insert into hulkdb.personal_details values(125,'Tammanah','Female',30,68,163,944117148)
+insert into hulkdb.personal_details values(126,'Samantha','Female',31,59,163,810604927)
+
+-- health_record
+
+insert into hulkdb.health_record values(211,78,98,'Mild',95,122)
+insert into hulkdb.health_record values(212,78,99,'Deep',97,116)
+insert into hulkdb.health_record values(213,78,98,'Moderate',92,120)
+insert into hulkdb.health_record values(214,78,97,'Deep',99,124)
+insert into hulkdb.health_record values(215,78,98,'Moderate',94,112)
+
+-- activity log 
+
+insert into hulkdb.activity_log values (311,'20:30:23','21:45:32','Running',211)
+insert into hulkdb.activity_log values(312,'06:45:43','08:30:23','Walking',213)
+insert into hulkdb.activity_log values(313,'07:58:56','08:49:44','Briskwalk',212)
+insert into hulkdb.activity_log values(314,'10:23:45','12:23:34','Jogging',215)
+insert into hulkdb.activity_log values(315,'14:35:45','16:21:54','Walking',214)
+
+-- running_record
+
+insert into hulkdb.running_record values (411,800,8,16,10,122) #211
+insert into hulkdb.running_record values (412,300,3,8,8,120) #213
+insert into hulkdb.running_record values (413,320,4,7,8,124) #214
+insert into hulkdb.running_record values (414,529,6,11,7,112) #215
+insert into hulkdb.running_record values (415,420,5,9,6,116) #212
+
+-- trainer_record
+
+insert into hulkdb.trainer_record values (511,'Puri',778293842)
+insert into hulkdb.trainer_record values (512,'Raja',453887453)
+insert into hulkdb.trainer_record values (514,'Vaitla',322765878)
+insert into hulkdb.trainer_record values (513,'Koratala',987878223)
+insert into hulkdb.trainer_record values (515,'Vinayak',213432323) 
+
+-- training_plan
+
+insert into hulkdb.training_plan values (611,'Morning','LowFHighP',513)
+insert into hulkdb.training_plan values (612,'Afternoon','Keto',514)
+insert into hulkdb.training_plan values (613,'Morning','Keto',512)
+insert into hulkdb.training_plan values (614,'Evening','HighP',515)
+insert into hulkdb.training_plan values (615,'Morning','juicediet',511)
+
+
+-- transaction_record
+
+insert into hulkdb.transaction_record values (701,112,80,'2022-12-01',615,314)
+insert into hulkdb.transaction_record values (702,116,60,'2022-10-09',613,315)
+insert into hulkdb.transaction_record values (703,120,70,'2022-10-10',611,312)
+insert into hulkdb.transaction_record values (704,122,60,'2022-11-22',612,313)
+insert into hulkdb.transaction_record values (705,124,100,'2022-11-23',614,311)
